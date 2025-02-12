@@ -1,0 +1,25 @@
+import pygame
+import sys
+import heapq
+import random
+
+# Inicializar Pygame
+pygame.init()
+# Inicializar el mixer para manejar la música
+pygame.mixer.init()
+# Cargar la música de fondo
+pygame.mixer.music.load("musicafondo.mp3")  # Asegúrate de que el nombre del archivo coincida
+# Reproducir la música en bucle
+pygame.mixer.music.play(-1)  # Reproducir en bucle (-1 para bucle infinito)
+# Inicializar joystick
+pygame.joystick.init()
+joystick = None
+if pygame.joystick.get_count() > 0:
+    joystick = pygame.joystick.Joystick(0)
+    joystick.init()
+
+# Configuración de la ventana
+screen_width = 1000
+screen_height = 1000
+screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption("Juego con A* y Árbol de Comportamiento")
