@@ -1,0 +1,3 @@
+# Cargar los sprites del enemigo y escalarlos
+enemy_images = [pygame.transform.scale(pygame.image.load(f"enemy_{i}.png").convert_alpha(),
+              (150, 150)) for i in range(1, ENEMY_N + 1)]  
