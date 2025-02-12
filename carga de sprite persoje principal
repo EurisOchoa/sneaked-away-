@@ -1,0 +1,3 @@
+# Cargar los sprites del personaje principal y escalarlos
+player_images = [pygame.transform.scale(pygame.image.load(f"walk{i}.png").convert_alpha(),
+               (100, 100)) for i in range(1, PLAYER_N + 1)]  
