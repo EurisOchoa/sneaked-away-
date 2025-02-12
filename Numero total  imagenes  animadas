@@ -1,0 +1,3 @@
+# Número total de imágenes en las animaciones
+PLAYER_N = 8
+ENEMY_N = 6
